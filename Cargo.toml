@@ -1,0 +1,15 @@
+[package]
+name = "next-rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1", features = ["macros"] }
+serde_json = { version = "1", features = ["raw_value"] }
+# Documentation: https://docs.rs/vercel_runtime/latest/vercel_runtime
+vercel_runtime = { version = "1.1.0" }
+
+# Each handler has to be specified as [[bin]]
+[[bin]]
+name = "handler"
+path = "api/crab.rs"
