@@ -22,7 +22,7 @@
     "typescript": "5.4.2"
   },
   "volta": {
-    "node": "20.11.1"
+    "node": "18.19.1"
   },
   "author": "capJavert",
   "devDependencies": {
