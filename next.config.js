@@ -18,6 +18,16 @@ const nextConfig = {
     }
 
     return rewrites
+  },
+  redirects: async () => {
+    return [
+      {
+        source: '/',
+        // read my article for more info about this template
+        destination: 'https://medium.com/@capJavert/integrating-rust-into-next-js-how-to-developer-guide-10e533470d71',
+        permanent: false
+      }
+    ]
   }
 }
 
