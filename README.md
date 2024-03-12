@@ -1,6 +1,6 @@
 ## Next.js + Rust template
 
-Learn how use Rust in your existing JavaScript/Next.js projects and discover how to deploy Rust to production on Vercel.
+Learn how to use Rust in your existing JavaScript/Next.js projects and discover how to deploy Rust to production on Vercel.
 
 You can use this template to get started writing Rust code in your Next.js project.
 
