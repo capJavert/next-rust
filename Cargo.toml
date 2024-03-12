@@ -8,8 +8,42 @@ tokio = { version = "1", features = ["macros"] }
 serde_json = { version = "1", features = ["raw_value"] }
 # Documentation: https://docs.rs/vercel_runtime/latest/vercel_runtime
 vercel_runtime = { version = "1.1.0" }
+url = "2.4.1"
+reqwest = { version = "0.11.23", features = ["blocking", "json"] }
+dotenv = "0.15.0"
+serde = { version = "1.0", features = ["derive"] }
+
+# libs
+[lib]
+path = "src/rs/utils.rs"
 
 # Each handler has to be specified as [[bin]]
+# Note that you need to provide unique names for each binary
+
 [[bin]]
-name = "handler"
+name = "crab"
 path = "api/crab.rs"
+
+[[bin]]
+name = "examples-cache"
+path = "api/examples/cache.rs"
+
+[[bin]]
+name = "examples-params"
+path = "api/examples/params.rs"
+
+[[bin]]
+name = "examples-env"
+path = "api/examples/env.rs"
+
+[[bin]]
+name = "examples-error"
+path = "api/examples/error.rs"
+
+[[bin]]
+name = "examples-create"
+path = "api/examples/create.rs"
+
+[[bin]]
+name = "examples-beer"
+path = "api/examples/beer.rs"
