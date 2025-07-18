@@ -7,9 +7,9 @@ edition = "2021"
 tokio = { version = "1", features = ["macros"] }
 serde_json = { version = "1", features = ["raw_value"] }
 # Documentation: https://docs.rs/vercel_runtime/latest/vercel_runtime
-vercel_runtime = { version = "1.1.0" }
-url = "2.4.1"
-reqwest = { version = "0.11.23", features = ["blocking", "json"] }
+vercel_runtime = { version = "1.1.6" }
+url = "2.5.4"
+reqwest = { version = "0.12.22", features = ["blocking", "json"] }
 dotenv = "0.15.0"
 serde = { version = "1.0", features = ["derive"] }
 
